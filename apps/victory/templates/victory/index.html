@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Victory Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'victory/css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>You won!</h1>
+        <form action="/conditions" method="POST">
+            {% csrf_token %}
+            <h3>Would you like to change the conditions?</h3>
+            <p><label for="goldamount">Amount of gold to win: </label>
+            <input type="text" id="goldamount" name="goldamount" value="{{ request.session.condition1 }}"></p>
+            <p><label for="totalturns">Total turns: </label>
+            <input type="text" id="totalturns" name="totalturns" value="{{ request.session.condition2 }}"></p>
+            <p><input type="submit" value="Play Again!"></p>
+        </form>
+    </div>
+    
+</body>
+</html>

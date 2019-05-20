@@ -1,0 +1,86 @@
+body {
+    /* background-color: #595959; */
+    background-image: linear-gradient(to bottom right, #bd9426, #2b2b2b);
+    height: 730px;
+}
+
+.container {
+    margin: 5%;
+    padding: 25px;
+    background-color: #eaeaea;
+    border: 10px solid gray;
+    border-radius: 10px;
+}
+.header {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.gold {
+    display: inline-block;
+    border: 2px dashed black;
+    padding: 3px 0px 3px 20px;
+    height: 20px;
+    width: 130px;
+}
+h4 {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 12px;
+    font-weight: 500;
+}
+h3 {
+    display: inline-block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 25px;   
+}
+
+form {
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 4%;
+    width: 20%;
+    height: 175px;
+}
+.activities {
+    font-size: 10px;
+    font-weight: 400;
+    overflow: auto;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    height: 150px;
+    padding: 0px 0px 10px 20px;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', cursive; 
+}
+
+ul {
+    border: 2px solid black;
+    height: 125px;
+    list-style-type: none;
+    padding: 20px;
+}
+button {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: red;
+}
+a {
+    color: white;
+}
+
+.btn {
+    padding: 8px;
+    background-color: goldenrod;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
